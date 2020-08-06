@@ -28,6 +28,7 @@ Do not return anything from your function.
  *     ListNode(int x) { val = x; }
  * }
  */
+
 class Solution {
     public void deleteNode(ListNode node) {
         node.val = node.next.val;
