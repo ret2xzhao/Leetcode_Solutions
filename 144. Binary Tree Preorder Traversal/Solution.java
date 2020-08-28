@@ -60,17 +60,20 @@ class Solution {
     }
 
     public List<Integer> preorderTraversal3(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        while(!stack.isEmpty()) {
-            TreeNode node = stack.pop();
-            if(node != null) {
-                res.add(node.val);
-                stack.push(node.right);
-                stack.push(node.left);
+        List<Integer> result = new ArrayList<Integer>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode curr = root;
+        while(!stack.isEmpty() || curr != null) {
+            if(curr != null) {
+                stack.push(curr);
+                result.add(curr.val);
+                curr = curr.left;
+            }
+            else {
+                curr = stack.pop();
+                curr = curr.right;
             }
         }
-        return res;
+        return result;
     }
 }
