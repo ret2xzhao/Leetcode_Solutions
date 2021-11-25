@@ -1,0 +1,34 @@
+# 1. Write a Linux shell command to redirect the stdout of command "cat abx.txt" to "stdout.txt" and stderr to "stderr.txt"
+#    cat abx.txt 2>stderr.txt |tee stdout.txt
+#    tee: read from standard input and write to standard output and files.
+#
+# 2. Write a Linux shell command to count the number of files with extension ".c" in current folder and its sub-folders.
+#    find ./ -type f -name "*.c" |wc -l
+#    -./:     current directory
+#    -type f: regular file
+#    -name:   pattern
+#
+#    wc: print newline, word, and byte counts for each file.
+#    -l: print the newline counts
+#    -c: print the byte counts
+#
+# 3. Write a script in shell, python, or any other language that 1.reads a string from stdin as input, 2.counts the number of spaces(blank characters) in the input string, and prints  #    out the count.
+#    #!/bin/sh
+#
+#    read string
+#    echo "$string" |tr -cd " \t"| wc -c
+#
+# 4. Write a Linux shell command to find out the top 5 memory usage processes, print out the parent process id, process id, and command string.
+#    ps -eo ppid,pid,cmd, --sort=-%mem |head -6
+#
+# 5. Write a Linux shell command to terminate all the processes with "needstop" string in command line.
+#    pkill -f 'needstop'
+#
+# 6. Please configure the interface "eth0" of local Linux PC with IP 192.168.0.99/24, set up the default route on gateway 192.168.0.3, DNS server as 8.8.8.8 .
+#    Set IP address:
+#    ifconfig eth0 192.168.0.99 netmask 255.255.255.0 up
+#    Set default route on gateway:
+#    route add default gw 192.168.0.3
+#    Set DNS server:
+#    echo "nameserver 8.8.8.8" > /etc/resolv.conf
+#    resolv.conf -resolver configuration file
