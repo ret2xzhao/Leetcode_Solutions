@@ -46,16 +46,15 @@ public:
 };
 
 int main() {
+    // g++ Solution.cpp -o Solution
+    Solution s;
+
     vector<int> ratings1 = {1, 0, 2};
-    Solution s1;
-    std::cout<<s1.candy(ratings1)<<endl;
+    std::cout<<s.candy(ratings1)<<endl;
 
     vector<int> ratings2 = {1, 2, 2};
-    Solution s2;
-    std::cout<<s2.candy(ratings2)<<endl;
+    std::cout<<s.candy(ratings2)<<endl;
 
     vector<int> ratings3 = {1};
-    Solution s3;
-    std::cout<<s3.candy(ratings3)<<endl;
-    // g++ Solution.cpp -o Solution
+    std::cout<<s.candy(ratings3)<<endl;
 }
