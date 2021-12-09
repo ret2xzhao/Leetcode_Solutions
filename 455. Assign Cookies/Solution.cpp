@@ -46,19 +46,18 @@ public:
 };
 
 int main() {
+    // g++ Solution.cpp -o Solution
+    Solution s;
+
     vector<int> input1 = {1, 2, 3};
     vector<int> input2 = {1, 1};
-    Solution s1;
-    std::cout<<s1.findContentChildren(input1, input2)<<endl;
+    std::cout<<s.findContentChildren(input1, input2)<<endl;
 
     vector<int> input3 = {1, 2};
     vector<int> input4 = {1, 2, 3};
-    Solution s2;
-    std::cout<<s2.findContentChildren(input3, input4)<<endl;
+    std::cout<<s.findContentChildren(input3, input4)<<endl;
 
     vector<int> input5 = {2, 4, 8};
     vector<int> input6 = {1, 2, 3, 5, 6, 7};
-    Solution s3;
-    std::cout<<s3.findContentChildren(input5, input6)<<endl;
-    // g++ Solution.cpp -o Solution
+    std::cout<<s.findContentChildren(input5, input6)<<endl;
 }
