@@ -66,9 +66,9 @@ int main() {
     vector<int> nums2 = {4,5,6,7,0,1,2};
     std::cout<<s.findMin(nums2)<<endl;
 
-    vector<int> nums3 =  {11,13,15,17};
+    vector<int> nums3 = {11,13,15,17};
     std::cout<<s.findMin(nums3)<<endl;
 
-    vector<int> nums4 =  {2,1};
+    vector<int> nums4 = {2,1};
     std::cout<<s.findMin(nums4)<<endl;
 }
