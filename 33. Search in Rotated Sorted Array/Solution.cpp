@@ -36,7 +36,7 @@ public:
         int left=0, right=nums.size()-1, mid;
         while(left<right){
             mid = (left+right+1) / 2;
-            if(nums[mid]>=nums[0]){
+            if(nums[mid]>=nums[left]){
                 left = mid;
             }
             else {
