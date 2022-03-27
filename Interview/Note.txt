@@ -19,6 +19,17 @@
 #    read string
 #    echo "$string" |tr -cd " \t"| wc -c
 #
+## get input from user
+#
+#inputString = input("Enter a string:")
+#
+#count = 0
+#for i in inputString:
+#    if i==" ":
+#        count=count+1
+#
+#print("The number of spaces: ", count)
+#
 # 4. Write a Linux shell command to find out the top 5 memory usage processes, print out the parent process id, process id, and command string.
 #    ps -eo ppid,pid,cmd, --sort=-%mem |head -6
 #
