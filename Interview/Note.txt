@@ -19,16 +19,13 @@
 #    read string
 #    echo "$string" |tr -cd " \t"| wc -c
 #
-## get input from user
-#
-#inputString = input("Enter a string:")
-#
-#count = 0
-#for i in inputString:
-#    if i==" ":
-#        count=count+1
-#
-#print("The number of spaces: ", count)
+#    # Python:
+#    inputString = input("Enter a string:")
+#    count = 0
+#    for i in inputString:
+#        if i==" ":
+#            count=count+1
+#    print("The number of spaces: ", count)
 #
 # 4. Write a Linux shell command to find out the top 5 memory usage processes, print out the parent process id, process id, and command string.
 #    ps -eo ppid,pid,cmd, --sort=-%mem |head -6
@@ -44,3 +41,11 @@
 #    Set DNS server:
 #    echo "nameserver 8.8.8.8" > /etc/resolv.conf
 #    resolv.conf -resolver configuration file
+#
+# 7. Given the following snippet from Wireshark, what is the source IP?
+#    0000 00 1c 7f 8b f2 72 2c b8 ed 4a 10 b4 08 00 45 00
+#    0010 01 f0 58 ee 40 00 80 06 4c fa 0a 41 dd 2b 82 00
+#    0020 e9 b2 e3 b2 00 50 b7 70 49 de 61 c5 76 5f 50 18
+#    0030 01 00 b8 f6 00 00
+#
+#    Answer: 10.65.221.43
