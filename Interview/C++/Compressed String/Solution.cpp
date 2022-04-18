@@ -16,8 +16,10 @@ Function Description:
 The function must return the compressed form of the message.
 compressedString has the following parameter(s):
     string message: a string
+
 Returns:
     string: the compressed message
+
 Constraints:
     -message[i] in ASCII[a-z]
     -|message| <= 10^5
